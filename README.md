@@ -37,7 +37,7 @@ A arquitetura do projeto é dividida em três camadas lógicas dentro do mesmo b
 ## 📁 Estrutura do Projeto
 
 O repositório está organizado com foco em scripts SQL, facilitando a implantação e manutenção do Data Warehouse.
-
+```
 ├── datasets/
 │   └── # Arquivos de dados brutos (ERP e CRM)
 ├── docs/
@@ -57,6 +57,9 @@ O repositório está organizado com foco em scripts SQL, facilitando a implanta�
 ├── README.md
 ├── LICENSE
 └── .gitignore
+```
+
+---
 
 ## 📄 Documentação Adicional
 
