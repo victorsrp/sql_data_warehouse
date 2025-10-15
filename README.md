@@ -30,7 +30,7 @@ A arquitetura do projeto é dividida em três camadas lógicas dentro do mesmo b
 
 * 🥇 **Camada Gold:** A camada final, onde os dados são modelados e agregados para atender diretamente às necessidades de negócio. Os dados são organizados em um modelo dimensional (Star Schema) e expostos através de Views para consumo em ferramentas de BI (Power BI, Tableau, etc.).
 
-> Para um detalhamento visual completo, consulte o **[Diagrama da Arquitetura](docs/data_architecture.drawio.png)**.
+> Para um detalhamento visual completo, consulte o **[Diagrama da Arquitetura](docs/design_arquitetura.png)**.
 
 ---
 
@@ -42,7 +42,7 @@ O repositório está organizado com foco em scripts SQL, facilitando a implanta�
 
 A documentação detalhada do projeto é fundamental para a sua manutenção e evolução.
 
-* **[Convenções de Nomenclatura](docs/padrao_nomenclatura.md)**: Descreve todos os padrões de nomenclatura para tabelas, colunas e outros objetos do Data Warehouse.
+* **[Convenções de Nomenclatura](docs/padroes_nomenclatura.md)**: Descreve todos os padrões de nomenclatura para tabelas, colunas e outros objetos do Data Warehouse.
 * **[Diagrama da Arquitetura](docs/design_arquitetura.png)**: Arquivo editável do Draw.io com o diagrama completo da arquitetura de dados.
 * **[Camadas do Data Warehouse](docs/data_layer.png)**: Arquivo editável do Draw.io com o diagrama completo das camadas do schema medalhão.
 
