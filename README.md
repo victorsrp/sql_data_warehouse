@@ -1,4 +1,4 @@
-# Projeto Visão 360 do Cliente
+# Projeto Data Warehouse com SQL Server
 
 ## 📖 Sobre o Projeto
 
@@ -58,6 +58,37 @@ O repositório está organizado com foco em scripts SQL, facilitando a implanta�
 ├── LICENSE
 └── .gitignore
 ```
+
+---
+
+## 🚀 Começando
+
+Siga as instruções abaixo para configurar e executar o Data Warehouse em seu ambiente.
+
+### Pré-requisitos
+
+* Microsoft SQL Server (2019 ou superior)
+* SQL Server Management Studio (SSMS) ou Azure Data Studio
+
+### Instalação e Execução
+
+1.  **Clone o repositório:**
+    ```sh
+    git clone https://victorsrp/sql_data_warehouse.git
+    cd sql_data_warehouse
+    ```
+
+2.  **Crie o Banco de Dados:**
+    Conecte-se à sua instância do SQL Server e crie um novo banco de dados para o projeto (ex: `dw_visaocliente`).
+
+3.  **Execute os Scripts de Carga:**
+    Para popular o Data Warehouse, execute os scripts da pasta `scripts/` na ordem correta das camadas:
+    
+    1.  Execute os scripts contidos na pasta `scripts/bronze/` para carregar os dados brutos.
+    2.  Execute os scripts da pasta `scripts/silver/` para transformar os dados da camada Bronze para a Silver.
+    3.  Execute os scripts da pasta `scripts/gold/` para criar os modelos analíticos finais.
+
+    *Observação: Pode ser necessário configurar caminhos de arquivos ou fontes de dados dentro dos scripts, dependendo da sua estratégia de ingestão (ex: `BULK INSERT`).*
 
 ---
 
