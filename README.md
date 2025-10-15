@@ -8,7 +8,7 @@ Este projeto implementa um Data Warehouse para unificar informações de Vendas 
 
 ### 🎯 O Problema
 
-Atualmente, os dados da InovaTech Soluções estão isolados em diferentes sistemas:
+Atualmente, os dados de uma empresa e-commerce estão isolados em diferentes sistemas:
 * A equipe de **Marketing** gerencia campanhas e leads em um **CRM**, mas não consegue medir o impacto real dessas ações em vendas.
 * A equipe de **Negócios** analisa o faturamento a partir de dados do **ERP**, mas não tem visibilidade sobre quais campanhas de marketing originaram os clientes mais valiosos.
 
