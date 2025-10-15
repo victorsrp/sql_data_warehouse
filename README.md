@@ -38,6 +38,26 @@ A arquitetura do projeto é dividida em três camadas lógicas dentro do mesmo b
 
 O repositório está organizado com foco em scripts SQL, facilitando a implantação e manutenção do Data Warehouse.
 
+├── datasets/
+│   └── # Arquivos de dados brutos (ERP e CRM)
+├── docs/
+│   ├── design_arquitetura.png
+|   ├── data_layer.png
+│   ├── padroes_nomenclatura.md
+│   └── ...
+├── scripts/
+│   ├── bronze/
+│   │   └── # Scripts para carga de dados na camada Bronze
+│   ├── silver/
+│   │   └── # Scripts para limpeza e transformação (Bronze -> Silver)
+│   └── gold/
+│       └── # Scripts para modelagem e agregação (Silver -> Gold)
+├── tests/
+│   └── # Scripts para testes de qualidade de dados
+├── README.md
+├── LICENSE
+└── .gitignore
+
 ## 📄 Documentação Adicional
 
 A documentação detalhada do projeto é fundamental para a sua manutenção e evolução.
