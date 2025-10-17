@@ -2,16 +2,16 @@
 ================================================================================
 DDL Script:     Create Bronze Tables
 Author:         Victor Pereira
-Create date:    [Data de Criação, ex: 2025-10-17]
+Create date:    17/10/25
 Version:        1.0
 ================================================================================
 Script Purpose:
-	Este script tem o propósito de criar as tabelas no Schema Bronze para
+	Este script tem o propÃ³sito de criar as tabelas no Schema Bronze para
 	receber os dados brutos das origens CRM e ERP.
 
 Execution Logic:
-	O script irá verificar a existência de tabelas com o mesmo nome,
-	excluí-las (DROP IF EXISTS) e então recriá-las com a estrutura definida.
+	O script irÃ¡ verificar a existÃªncia de tabelas com o mesmo nome,
+	excluÃ­-las (DROP IF EXISTS) e entÃ£o recriÃ¡-las com a estrutura definida.
 ================================================================================
 */
 USE DataWarehouse;
