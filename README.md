@@ -19,9 +19,8 @@ Esse cenário impede o cálculo preciso do ROI de campanhas e a criação de uma
 Este projeto resolve o problema através da construção de um pipeline de dados, orquestrado por Stored Procedures em T-SQL, que segue a **Arquitetura Medalhão** (Bronze, Silver, Gold) para criar uma fonte única da verdade (*Single Source of Truth*). A solução centraliza e modela os dados dentro do SQL Server, permitindo análises cruzadas e a geração de insights valiosos.
 
 ---
-
 ## 🏛️ Arquitetura de Dados
-
+![Data Architecture](docs/design_arquitetura.png)
 A arquitetura do projeto é dividida em três camadas lógicas dentro do mesmo banco de dados, garantindo rastreabilidade, qualidade e performance.
 
 * 🥉 **Camada Bronze:** Contém os dados brutos, exatamente como chegam das fontes (CSVs do ERP e CRM). Seu principal objetivo é a rastreabilidade e a capacidade de reprocessamento.
