@@ -87,7 +87,7 @@ Siga as instruções abaixo para configurar e executar o Data Warehouse em seu a
     2.  Execute os scripts da pasta `scripts/silver/` para transformar os dados da camada Bronze para a Silver.
     3.  Execute os scripts da pasta `scripts/gold/` para criar os modelos analíticos finais.
 
-    *Observação: Pode ser necessário configurar caminhos de arquivos ou fontes de dados dentro dos scripts, dependendo da sua estratégia de ingestão (ex: `BULK INSERT`).*
+    *Observação: Pode ser necessário configurar caminhos de arquivos ou fontes de dados dentro dos scripts, dependendo de onde foi clonado o projeto.*
 
 ---
 
@@ -95,9 +95,11 @@ Siga as instruções abaixo para configurar e executar o Data Warehouse em seu a
 
 A documentação detalhada do projeto é fundamental para a sua manutenção e evolução.
 
+* **[Regras de Negócios](docs/business_rules.md)**: Documento que define as regras e validações de negócio que garantem a integridade e consistência dos dados no projeto.
 * **[Convenções de Nomenclatura](docs/padroes_nomenclatura.md)**: Descreve todos os padrões de nomenclatura para tabelas, colunas e outros objetos do Data Warehouse.
 * **[Diagrama da Arquitetura](docs/design_arquitetura.png)**: Arquivo editável do Draw.io com o diagrama completo da arquitetura de dados.
 * **[Camadas do Data Warehouse](docs/data_layer.png)**: Arquivo editável do Draw.io com o diagrama completo das camadas do schema medalhão.
+* **[Data Catalog](docs/data_catalog.md)**: Documento que descreve e organiza os conjuntos de dados do projeto, detalhando suas origens, estrutura, finalidade e relações no ecossistema de dados.
 
 ---
 
