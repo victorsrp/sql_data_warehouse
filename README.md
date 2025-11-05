@@ -37,25 +37,25 @@ A arquitetura do projeto é dividida em três camadas lógicas dentro do mesmo b
 
 O repositório está organizado com foco em scripts SQL, facilitando a implantação e manutenção do Data Warehouse.
 ```
-├── datasets/
-│   └── # Arquivos de dados brutos (ERP e CRM)
+├── datasets/                                        # Conjuntos de dados brutos usados no projeto (dados de ERP e CRM)
 ├── docs/
-│   ├── design_arquitetura.png
-|   ├── data_layer.png
-│   ├── padroes_nomenclatura.md
+│   ├── Arquitetura_dados.drawio                     # Arquivo Draw.io mostrando a arquitetura do projeto
+|   ├── data_layer.png                               # Ilustração da camada de dados, mostrando os níveis Bronze, Silver e Gold
+|   ├── business_rules.md                            # Documento descrevendo as regras de negócio aplicadas durante o processo de transformação de dados
+|   ├── integration_model.drawio                     # Diagrama mostrando o modelo de integração entre fontes e camadas do Data Warehouse
+|   ├── data_mart.drawio                             # Arquivo Draw.io com os modelos de dados (esquema estrela)
+|   ├── data_catalog.md                              # Catálogo dos conjuntos de dados, incluindo descrições de campos e metadados
+|   ├── data_flow.drawio                             # Arquivo Draw.io com o diagrama de fluxo de dados
+│   ├── padroes_nomenclatura.md                      # Diretrizes consistentes de nomenclatura para tabelas, colunas e arquivos
 │   └── ...
 ├── scripts/
-│   ├── bronze/
-│   │   └── # Scripts para carga de dados na camada Bronze
-│   ├── silver/
-│   │   └── # Scripts para limpeza e transformação (Bronze -> Silver)
-│   └── gold/
-│       └── # Scripts para modelagem e agregação (Silver -> Gold)
-├── tests/
-│   └── # Scripts para testes de qualidade de dados
-├── README.md
-├── LICENSE
-└── .gitignore
+│   ├── bronze/                                      # Scripts para carga de dados na camada Bronze
+│   ├── silver/                                      # Scripts para limpeza e transformação (Bronze -> Silver)
+│   └── gold/                                        # Scripts para modelagem e agregação (Silver -> Gold)
+├── tests/                                           # Scripts para testes de qualidade de dados
+├── README.md                                        # Visão geral do projeto e instruções
+├── LICENSE                                          # Informações de licença do repositório
+└── .gitignore                                       # Arquivos e diretórios ignorados pelo Git
 ```
 
 ---
@@ -73,14 +73,14 @@ Siga as instruções abaixo para configurar e executar o Data Warehouse em seu a
 
 1.  **Clone o repositório:**
     ```sh
-    git clone https://victorsrp/sql_data_warehouse.git
+    git clone https://github.com/victorsrp/sql_data_warehouse.git
     cd sql_data_warehouse
     ```
 
 2.  **Crie o Banco de Dados:**
-    Conecte-se à sua instância do SQL Server e crie um novo banco de dados para o projeto (ex: `dw_visaocliente`).
+    Abra o script **init_database.sql** ```sql_data_warehouse\scripts\init_database.sql ```
 
-3.  **Execute os Scripts de Carga:**
+4.  **Execute os Scripts de Carga:**
     Para popular o Data Warehouse, execute os scripts da pasta `scripts/` na ordem correta das camadas:
     
     1.  Execute os scripts contidos na pasta `scripts/bronze/` para carregar os dados brutos.
