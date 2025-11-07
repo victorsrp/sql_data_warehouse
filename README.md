@@ -39,7 +39,7 @@ O repositório está organizado com foco em scripts SQL, facilitando a implanta�
 ```
 ├── datasets/                                        # Conjuntos de dados brutos usados no projeto (dados de ERP e CRM)
 ├── docs/
-│   ├── Arquitetura_dados.drawio                     # Arquivo Draw.io mostrando a arquitetura do projeto
+│   ├── data_architecture.drawio                     # Arquivo Draw.io mostrando a arquitetura do projeto
 |   ├── data_layer.png                               # Ilustração da camada de dados, mostrando os níveis Bronze, Silver e Gold
 |   ├── business_rules.md                            # Documento descrevendo as regras de negócio aplicadas durante o processo de transformação de dados
 |   ├── integration_model.drawio                     # Diagrama mostrando o modelo de integração entre fontes e camadas do Data Warehouse
